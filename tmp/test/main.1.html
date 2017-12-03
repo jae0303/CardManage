@@ -1,0 +1,70 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test Document</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="css/tab.1.css">
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" /> --> 
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>
+                page1
+            </h1>
+        </div>
+        <div data-role="content">
+            Content1</div>
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" class="ui-btn-active ui-state-persist">One</a></li>
+                    <li><a href="#page2">Two</a></li>
+                    <li><a href="#page3">Three</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>
+                page2
+            </h1>
+        </div>
+        <div data-role="content">
+            Content2</div>
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">One</a></li>
+                    <li><a href="#page2" class="ui-btn-active ui-state-persist">Two</a></li>
+                    <li><a href="#page3">Three</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <h1>
+                page3
+            </h1>
+        </div>
+        <div data-role="content">
+            Content3</div>
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">One</a></li>
+                    <li><a href="#page2">Two</a></li>
+                    <li><a href="#page3" class="ui-btn-active ui-state-persist">Three</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

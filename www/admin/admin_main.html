@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Admin Main page</title>
+    <meta name="viewport" content="width=device-width,height=device-height, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../css/main/tab.css">
+    <link rel="stylesheet" href="../css/main/list.css">
+    <link rel="stylesheet" href="../css/main/calander.css">
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" /> --> 
+    <script src="../js/card_list/card_list.js"></script>
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+<body>
+
+    <!-- 카드 탭 -->
+    <div data-role="page" id="card">
+        <!-- 제목 -->
+        <div data-role="header">
+            <h1>
+                </br> 카드 리스트
+            </h1>
+        </div>
+
+        <!-- 내용 -->
+        <div data-role="content">
+    
+        </div>
+
+        <!-- 탭 -->
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#card" class="ui-btn-active ui-state-persist">카드</a></li>
+                    <li><a href="#stat">통계</a></li>
+                    <li><a href="#setting">설정</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 카드 탭 끝 -->
+
+
+    <!-- 통계 탭 -->
+    <div data-role="page" id="stat">
+        <!-- 제목 -->
+        <div data-role="header">
+            <h1>
+                </br>통계 페이지
+            </h1>
+        </div>
+        <!-- 내용 -->
+        <div data-role="content">
+
+        </div>
+
+        <!-- 탭 -->
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#card">카드</a></li>
+                    <li><a href="#stat" class="ui-btn-active ui-state-persist">통계</a></li>
+                    <li><a href="#setting">설정</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 통계 탭 끝 -->
+
+
+    <!-- 설정 탭 -->
+    <div data-role="page" id="setting">
+        <!-- 제목 -->
+        <div data-role="header">
+            <h1>
+                </br>설정 
+            </h1>
+        </div>
+        <!-- 내용 -->
+        <div data-role="content">
+            설정 탭 페이지 
+        </div>
+
+        <!-- 탭 -->    
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#card">카드</a></li>
+                    <li><a href="#stat">통계</a></li>
+                    <li><a href="#setting" class="ui-btn-active ui-state-persist">설정</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 설정 탭 끝 -->
+
+</body>
+</html>
+

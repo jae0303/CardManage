@@ -1,0 +1,135 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>card list</title>
+    <meta name="viewport" content="width=device-width,height=device-height, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="css/card/card_ui.css">
+    <link rel="stylesheet" href="css/card/card_tab.css">
+    <link rel="stylesheet" href="css/card/card_list.css">
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" /> --> 
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+    <script src="js/card_list/save_radio_value.js"></script>
+</head>
+<body>
+
+    <!-- 봉사 카드 탭 -->
+    <div data-role="page" id="card">
+        <!-- 상단 바 -->
+        <div data-role="header" data-position="fixed">
+            <a href="javascript:history.back()" class="ui-btn-left"></br>뒤로</a>
+            <a href="javascript:alert(localStorage.getItem($('input[name="103"]:checked'));)" class="ui-btn-right"></br>반납</a>
+            <h1></br>구역카드1-구갈4 </h1>
+        </div>
+        
+
+        <!-- 내용 -->
+        <div data-role="content" id="1page">
+
+            <div data-role="footer" data-theme="c" data-position="fixed" >
+                <h3>드림랜드 101동</h3>
+            </div>
+
+            <!-- 리스트 시작 -->
+            <ul class="list list--material">
+                <!-- <h1> 드림랜드 101동 </h1> --> 
+
+                <!-- 리스트 아이템 - 한 집씩 기록  -->
+                <li class="list_item list_item--material">
+                    <div class="list_item_center list_item--material_center" >
+                        <div class="list_item_title list_item--material_title"> 103호</div>
+                    </div>
+                    <div class="list_item_right list_item--material_right" >
+                        <input type="radio" id="103-1" class="rad" name="103" />
+                        <label for="103-1">방문</label>
+                        <input type="radio" id="103-2" class="rad" name="103" />
+                        <label for="103-2">부재</label>
+                        <input type="radio" id="103-3" class="rad" name="103" />
+                        <label for="103-3">거부</label>
+                    </div>
+                </li>
+                <!-- 리스트 아이템 끝 -->
+                <!-- 호수 불러와서 이 부분을 반복 해야함 -->
+
+
+                <!-- 테스트를 위한 호수 별 입력 -->
+                <!-- 스크립트 생성 후 삭제 필요 -->
+                <li class="list_item list_item--material">
+                    <div class="list_item_center list_item--material_center" >
+                        <div class="list_item_title list_item--material_title"> 203호</div>
+                    </div>
+                    <div class="list_item_right list_item--material_right" >
+                        <input type="radio" id="203-1" class="rad" name="203" />
+                        <label for="203-1">방문</label>
+                        <input type="radio" id="203-2" class="rad" name="203" />
+                        <label for="203-2">부재</label>
+                        <input type="radio" id="203-3" class="rad" name="203" />
+                        <label for="203-3">거부</label>
+                    </div>
+                </li>
+
+                <li class="list_item list_item--material">
+                    <div class="list_item_center list_item--material_center" >
+                        <div class="list_item_title list_item--material_title"> 104호</div>
+                    </div>
+                    <div class="list_item_right list_item--material_right" >
+                        <input type="radio" id="104-1" class="rad" name="104" />
+                        <label for="104-1">방문</label>
+                        <input type="radio" id="104-2" class="rad" name="104" />
+                        <label for="104-2">부재</label>
+                        <input type="radio" id="104-3" class="rad" name="104" />
+                        <label for="104-3">거부</label>
+                    </div>
+                </li>
+
+                <li class="list_item list_item--material">
+                    <div class="list_item_center list_item--material_center" >
+                        <div class="list_item_title list_item--material_title"> 204호</div>
+                    </div>
+                    <div class="list_item_right list_item--material_right" >
+                        <input type="radio" id="204-1" class="rad" name="204" />
+                        <label for="204-1">방문</label>
+                        <input type="radio" id="204-2" class="rad" name="204" />
+                        <label for="204-2">부재</label>
+                        <input type="radio" id="204-3" class="rad" name="204" />
+                        <label for="204-3">거부</label>
+                    </div>
+                </li>
+                <!-- 여기까지가 삭제해야하는 부분 -->
+
+                </br>
+                <!-- 기타 기록 사항 메모 부분 --> 
+                <li class="list_item list_item--material">
+                    <div class="list_item_center list_item--material_center">
+                        <div class="list_item_title list_item_material_title"> 메모 </div>
+                    </div>
+                    <div class="list_item_right list_item--material_right">
+                        <input type="text" class="myTextboxClass ui-input-text ui-body-c" />
+                    </div>
+                </li>
+                <!-- 메모 끝 -->
+            </ul>  
+        </div>
+        <!-- 한페이지 끝. 이 페이지 데이타 저장 후 다음 아파트 탭 클릭하여 넘어가야 함 -->
+
+
+        <!-- 다음 아파트 , 이전 아파트 탭 -->
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('1page').nextSibling;">이전 아파트</a></li>
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('1page').nextSibling;">다음 아파트</a></li>
+                   <!-- <li><a href="#priv_apt">이전 아파트</a></li> -->
+                   <!-- <li><a href="#next_apt">다음 아파트</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <!-- 탭 부분 끝 -->
+
+    </div>
+
+
+</body>
+</html>

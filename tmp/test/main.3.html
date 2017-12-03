@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!-- css 참고 페이지  http://components.onsen.io/  -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="css/tab.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/list.css">
+        
+        <title>Main Page</title>
+    </head>
+    <body>
+
+        <!-- bottom menu bar -->
+        <div class="tab-bar">
+
+            <label class="tab-bar_item">
+                <input type="radio" name="tab-bar-c" checked="checked">
+                <button class="tab-bar_button">
+                <div class="tab-bar_label">봉사카드</div>
+                </button>
+            </label>
+
+            <label class="tab-bar_item">
+                <input type="radio" name="tab-bar-c">
+                <button class="tab-bar_button">
+                <div class="tab-bar_label">전시대</div>
+                </button>
+            </label>
+
+            <label class="tab-bar_item">
+                <input type="radio" name="tab-bar-c">
+                <button class="tab-bar_button">
+                <div class="tab-bar_label">설정</div>
+                </button>
+            </label>
+        </div>
+
+
+        <div class="tab-bar_content">
+
+                <!-- top bar -->
+            <div class="navigation-bar">
+                <div class="navigation-bar_center">구역 카드 리스트</div>
+            </div>
+
+            <!-- list -->
+
+            <ul class="list list--material">
+                <li class="list_item list_item--material">
+                    <div class="list_item_left list_item--material_left">
+                    <img class="list_item_thumbnail list_item--material_thumbnail" src="http://placekitten.com/g/42/41" alt="Cute kitten">
+                    </div>
+
+                    <div class="list_item_center list_item--material_center">
+                    <div class="list_item_title list_item--material_title">구역카드1</div>
+                    <div class="list_item_subtitle list_item--material_subtitle">2017-05-04</div>
+                    </div>
+                </li>
+
+                <li class="list_item list_item--material">
+                    <div class="list_item_left list_item--material_left">
+                    <img class="list_item_thumbnail list_item--material_thumbnail" src="http://placekitten.com/g/40/40" alt="Cute kitten">
+                    </div>
+
+                    <div class="list_item_center list_item--material_center">
+                    <div class="list_item_title list_item--material_title">구역카드2</div>
+                    <div class="list_item_subtitle list_item--material_subtitle">2017-05-02</div>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+     
+        
+
+        <!-- java script include -->
+        <script src="js/main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width,height=device-height, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="css/main/tab.css">
+    <link rel="stylesheet" href="css/main/list.css">
+    <link rel="stylesheet" href="css/main/calander.css">
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" /> --> 
+    <script src="js/card_list/card_list.js"></script>
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+<body>
+
+    <!-- 봉사 카드 탭 -->
+    <div data-role="page" id="card">
+        <!-- 제목 -->
+        <div data-role="header">
+            <h1>
+                </br>구역 카드 리스트
+            </h1>
+        </div>
+
+        <!-- 내용 -->
+        <div data-role="content">
+
+
+            <!-- 할당받은 카드 리스트 출력 -->
+            <ul class="list list--material">
+                <li class="list_item list_item--material">
+                    <div class="list_item_left list_item--material_left">
+                        <img class="list_item_thumbnail list_item--material_thumbnail" src="http://placekitten.com/g/42/41" alt="Cute kitten">
+                    </div>
+
+                    <div class="list_item_center list_item--material_center" onclick="location.href='card.html'" >
+                        <div class="list_item_title list_item--material_title">구역카드1-구갈4</div>
+                        <div class="list_item_subtitle list_item--material_subtitle">2017-05-04</div>
+                    </div>
+                </li>
+
+                <li class="list_item list_item--material">
+                    <div class="list_item_left list_item--material_left">
+                        <img class="list_item_thumbnail list_item--material_thumbnail" src="http://placekitten.com/g/40/40" alt="Cute kitten">
+                    </div>
+
+                    <div class="list_item_center list_item--material_center" onclick="location.href='card2.html'" >
+                        <div class="list_item_title list_item--material_title">구역카드2-구갈5</div>
+                        <div class="list_item_subtitle list_item--material_subtitle">2017-05-02</div>
+                    </div>
+                </li>
+            </ul>      
+        </div>
+
+        <!-- 탭 -->
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#card" class="ui-btn-active ui-state-persist">봉사카드</a></li>
+                    <li><a href="#jsd">전시대</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 봉사카드 탭 끝 -->
+
+
+    <!-- 전시대 탭 -->
+    <div data-role="page" id="jsd">
+        <!-- 제목 -->
+        <div data-role="header">
+            <h1>
+                </br>전시대 일정
+            </h1>
+        </div>
+        <!-- 내용 -->
+        <div data-role="content">
+
+        </div>
+
+        <!-- 탭 -->
+        <div data-id="PersistentFooter" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#card">봉사카드</a></li>
+                    <li><a href="#jsd" class="ui-btn-active ui-state-persist">전시대</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 전시대 탭 끝 -->
+
+</body>
+</html>
+
